@@ -4,21 +4,23 @@
 
 ## Структура основных файлов
 
- src/main/kotlin/
-    ├── Main.kt               # точка входа, запуск Swing-приложения
-    ├── ui/
-    │   └── SearchUI.kt       # интерфейс поиска и отрисовка результатов
-    ├── query/
-    │   ├── Query.kt          # абстрактное синтаксическое дерево запроса: Term, And, Or, Not
-    │   ├── QueryParser.kt    # разбор строки запроса в абстрактное синтаксическое дерево
-    │   └── QueryEvaluator.kt # вычисление абстрактного синтаксического дерева по posting-листам
-    ├── index/
-    │   ├── SegmentedIndex.kt # чтение сегментов индекса с диска
-    │   ├── IndexBuilder.kt   # построение и сброс сегментов на диск
-    │   └── Hash.kt           # вычисление 128-битного хэша терма
-    └── storage/
-        ├── DiskDocumentStore.kt # получение полных документов по id
-        └── Document.kt          # модель документа
+```text
+src/main/kotlin/
+├── Main.kt                     # точка входа, запуск Swing-приложения
+├── ui/
+│   └── SearchUI.kt             # интерфейс поиска и отрисовка результатов
+├── query/
+│   ├── Query.kt                # AST запроса: Term, And, Or, Not
+│   ├── QueryParser.kt          # разбор строки запроса в AST
+│   └── QueryEvaluator.kt       # вычисление AST по posting-листам
+├── index/
+│   ├── SegmentedIndex.kt       # чтение сегментов индекса с диска
+│   ├── IndexBuilder.kt         # построение и сброс сегментов на диск
+│   └── Hash.kt                 # вычисление 128-битного хэша терма
+└── storage/
+    ├── DiskDocumentStore.kt    # получение полных документов по id
+    └── Document.kt             # модель документа
+```
 
 ## Как исполняется запрос
 
