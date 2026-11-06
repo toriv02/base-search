@@ -1,7 +1,7 @@
 package search.importer
 
-import search.index.DiskDocumentStore
-import search.index.SegmentedIndex
+import search.indexlogic.DiskDocumentStore
+import search.indexlogic.SegmentedIndex
 import java.io.File
 import java.sql.DriverManager
 

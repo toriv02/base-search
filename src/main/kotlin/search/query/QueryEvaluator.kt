@@ -1,6 +1,6 @@
 package search.query
 
-import search.index.SearchableIndex
+import search.indexlogic.SearchableIndex
 
 class QueryEvaluator(private val index: SearchableIndex) {
 

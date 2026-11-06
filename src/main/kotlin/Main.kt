@@ -1,8 +1,8 @@
 package search
 
 import search.importer.MultiWikiImporter
-import search.index.DiskDocumentStore
-import search.index.SegmentedIndex
+import search.indexlogic.DiskDocumentStore
+import search.indexlogic.SegmentedIndex
 import search.ui.SearchUI
 import java.io.File
 import javax.swing.SwingUtilities

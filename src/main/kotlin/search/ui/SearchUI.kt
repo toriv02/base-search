@@ -1,7 +1,7 @@
 package search.ui
 
-import search.index.DiskDocumentStore
-import search.index.SearchableIndex
+import search.indexlogic.DiskDocumentStore
+import search.indexlogic.SearchableIndex
 import search.query.QueryParser
 import search.query.QueryEvaluator
 import java.awt.*
